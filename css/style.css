@@ -1,0 +1,468 @@
+*{ margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: "Chillax";
+    src: url ('typo/Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.eot');
+}
+body{
+    font-family: "Chillax";
+}
+
+header{
+    background-color:#98B2DD;
+    display: flex;
+    justify-content:space-around;
+    height: 80px;
+    z-index: 99999;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header img{
+    height: 180px;
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    color: #1D3557;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+	color: #F8A41E;
+}
+
+h2{
+    font-size: 50px;
+    color: #1d3557;
+    
+}
+
+h3{
+    font-size: 30px; 
+    color: #1d3557;
+}
+
+h4{
+    font-size: 40px; 
+    color: #1d3557;
+    text-decoration-line: underline;
+}
+
+p{
+    font-size: 40px;
+    color: #1d3557;
+    text-align: center;
+}
+
+nav a{
+    padding: 25px;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    }
+
+nav a:hover{
+    background-color:#FCF2E4;
+    transition-duration: 0.5s;
+    }
+
+#hero{
+    width: 100%;
+    height: 820px;
+    background-size: cover;
+    background-position: center; 
+    background-image:url(../img/banner_2.jpg);
+}
+
+#artists{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FCF2E4;
+    padding: 50px;
+}
+
+#homepasses{
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FCF2E4;
+    background-image: url(../img/flower.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 400px;
+    background-position: left
+    
+}
+
+#buynow{
+    font-size: 40px; 
+    color: #1d3557;
+    text-decoration-line: underline;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    min-width: 30%;
+}
+
+/*artists scroll*/
+
+article {
+	background: #FCF2E4;
+	box-sizing:border-box;
+	color: #F8A41E;
+}
+
+.infoboxLeft{
+    position: absolute;
+    top: 400px;
+    right: 400px;
+    z-index: 9;
+    width: 300px;
+    height: 300px;
+}
+.infoboxRight{
+    position: absolute;
+    top: 43px;
+    left: 42px;
+    z-index: 9;
+    width: 300px;
+    height: 300px;
+}
+
+	figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		background: #eee;
+		width: calc( 50% + 1px);
+		height: auto;
+		margin: 0 auto 10vh 0;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+		box-shadow: 4px -4px 8px rgba(0,0,0,.4);
+			}
+	figure::after {
+		content: '';
+		position: absolute;
+		top: 5vmin;
+		right: 5vmin;
+		bottom: 5vmin;
+		left: 45%;
+		border: 2px dashed #fff;
+		outline: 1px solid #fff;
+		outline-offset: -5vmin;
+		backdrop-filter: grayscale(1);
+		pointer-events: none;
+			}
+	figure:nth-of-type(2n)::after {
+		right: 45%;
+		left: 5vmin;
+	}
+#scroll {
+		background: #e5e5e5;
+		width: calc(50% + 1px);
+		height: 500px;
+		margin: 0 0 10vh auto;
+		position: sticky;
+		top: 0;
+		// overflow: hidden;
+		padding: 5vmin;
+		box-shadow: -4px -4px 8px rgba(0,0,0,.4);
+			}
+	figure:nth-of-type(1),
+#scroll:nth-of-type(1) {
+		margin: 0 0 10vh 0;
+		width: 50%;
+			}
+	figure:nth-of-type(2n) {
+		margin: 0 0 10vh auto;
+		box-shadow: -4px -4px 8px rgba(0,0,0,.4);
+			}
+#scroll:nth-of-type(2n) {
+		margin: 0 auto 10vh 0;
+		box-shadow: 4px -4px 8px rgba(0,0,0,.4);
+		}
+	figure:last-of-type,
+#scroll:last-of-type {
+		margin-bottom: 0;
+	}
+#scroll::before {
+		background: inherit;
+		z-index: 1;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left:0;
+		width: 7vmin;
+		height: 7vmin;
+		transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
+		clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+		box-shadow: -4px -2px 8px rgba(0,0,0,.4);
+		border-radius: 1.5vmin 0 0 0;
+	}
+#scroll:nth-of-type(2n)::before {
+		left:auto;
+		right: 0;
+		transform: translate(calc(50% - 1px), -50%) rotate(-45deg) scale(-1);
+	}
+#scroll::after {
+		content: '';
+		position: absolute;
+		top: 5vmin;
+		right: 45%;
+		bottom: 5vmin;
+		left: 5vmin;
+		border: 2px dashed #fff;
+		outline: 1px solid #fff;
+		outline-offset: -5vmin;
+		backdrop-filter: invert(1);
+		pointer-events: none;
+	}
+#scroll:nth-of-type(2n):after {
+		right: 5vmin;
+		left: 45%;
+	}
+ figure img {
+		min-width: 50%;
+		min-height: 50%;
+		object-fit: cover;
+		object-position: center;
+	}
+#scroll > div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		padding: 1rem;
+	}
+
+/*newsletter form*/
+
+#newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FCF2E4;
+    padding-top: 80px;
+}
+
+#newsletterleft{
+    width: 60%;
+    height: 400px;
+}
+
+#newsletterright{
+    width: 40%;
+    height: 400px;
+    background-image: url(../img/contact_flower.png);
+    background-size:310px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#formfields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletterformfields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter h4{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/*newsletter end*/
+
+/*contact form*/
+
+#contact {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FCF2E4;
+    padding-top: 80px;
+}
+#contact p{
+    color: #98B2DD;
+    font-size: 20px;
+    padding: 30px;
+}
+
+#contact h4{
+    text-decoration-line: none;
+    font-size: 30px;
+    text-align: center
+}
+
+#right{
+    width: 50%;
+}
+
+#left{
+    width: 50%;
+    margin: 10px;
+}
+
+#contactformfields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: solid 1px #F8A41E;
+    font-family: "Chillax";
+    font-size: 20px;
+    color: #F8A41E;
+}
+
+input:hover {
+  background: #FFF0D9;
+}
+
+textarea {
+    width: 80%;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: solid 1px #F8A41E;
+    font-family: "Chillax";
+    font-size: 20px;
+    color: #F8A41E;
+}
+
+textarea:hover {
+  background: #FFF0D9;
+}
+
+#submit {
+  border-radius:50px;
+  border: solid 1px #F8A41E;
+}
+
+#submit:hover {
+  color: #F8A41E;
+}
+
+/*contactform end*/
+
+.button{
+    display:inline-block;
+    background-color:#C3CFDD;
+    border:1px solid transparent;
+    padding: 20px;
+    border-radius:50px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.button:hover{
+    text-decoration-line: none;
+    transform: scale(1.02);
+    background-color: #98B2DD;
+    box-shadow: 0 10px 20px 0 rgba(00, 00, 00, 0.1);
+}
+
+#ourprices{
+    padding: 100px;
+    text-align: center;
+}
+
+#package{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FCF2E4;
+    background-image: url(../img/illus_back.png);
+    background-size: cover;
+    height: 650px;
+    padding: 80px;
+}
+
+.passes{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    text-align: center;
+    justify-content:space-evenly;
+    background-color: #FCEBD4;
+    border-radius: 90px;
+    overflow: hidden;
+    width: 150px;
+    padding: 50px;
+}
+
+.price{
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-image: url(../img/flower.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#lineup{
+    background-image: url(../img/lineup_background.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FCF2E4;
+    padding: 50px;
+}
+
+#lineup img{
+    width: 50%;
+    padding-top: 15px;
+    
+}
+
+footer{ background-color: #98B2DD;
+     color: #FCF2E4;
+    text-align: center;
+    
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
