@@ -382,6 +382,8 @@ textarea:hover {
 
 /*contactform end*/
 
+/* all buttons */
+
 .button{
     display:inline-block;
     background-color:#C3CFDD;
@@ -398,6 +400,8 @@ textarea:hover {
     background-color: #98B2DD;
     box-shadow: 0 10px 20px 0 rgba(00, 00, 00, 0.1);
 }
+
+/* tickets page */
 
 #ourprices{
     padding: 100px;
@@ -443,6 +447,7 @@ textarea:hover {
     background-repeat: no-repeat;
 }
 
+/* line up page */
 #lineup{
     background-image: url(../img/lineup_background.png);
     background-size: cover;
