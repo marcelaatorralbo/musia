@@ -455,13 +455,12 @@ textarea:hover {
     align-items: center;
     justify-content: space-around;
     background-color: #FCF2E4;
-    padding: 50px;
+    padding: 20px;
 }
 
 #lineup img{
-    width: 50%;
-    padding-top: 15px;
-    
+    max-width: 100%;
+    padding-top: 10%;
 }
 
 footer{ background-color: #98B2DD;
